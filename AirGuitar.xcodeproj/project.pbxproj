@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CF7238718B91A6300B9F60B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF7238618B91A6300B9F60B /* Foundation.framework */; };
+		2CF7238918B91A6300B9F60B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF7238818B91A6300B9F60B /* CoreGraphics.framework */; };
+		2CF7238B18B91A6300B9F60B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF7238A18B91A6300B9F60B /* UIKit.framework */; };
+		2CF7238D18B91A6300B9F60B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF7238C18B91A6300B9F60B /* CoreData.framework */; };
+		2CF7239318B91A6300B9F60B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CF7239118B91A6300B9F60B /* InfoPlist.strings */; };
+		2CF7239518B91A6300B9F60B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF7239418B91A6300B9F60B /* main.m */; };
+		2CF7239918B91A6300B9F60B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF7239818B91A6300B9F60B /* AppDelegate.m */; };
+		2CF7239C18B91A6300B9F60B /* AirGuitar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CF7239A18B91A6300B9F60B /* AirGuitar.xcdatamodeld */; };
+		2CF7239E18B91A6300B9F60B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF7239D18B91A6300B9F60B /* Images.xcassets */; };
+		2CF723A518B91A6300B9F60B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF723A418B91A6300B9F60B /* XCTest.framework */; };
+		2CF723A618B91A6300B9F60B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF7238618B91A6300B9F60B /* Foundation.framework */; };
+		2CF723A718B91A6300B9F60B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF7238A18B91A6300B9F60B /* UIKit.framework */; };
+		2CF723A818B91A6300B9F60B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF7238C18B91A6300B9F60B /* CoreData.framework */; };
+		2CF723B018B91A6300B9F60B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CF723AE18B91A6300B9F60B /* InfoPlist.strings */; };
+		2CF723B218B91A6300B9F60B /* AirGuitarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF723B118B91A6300B9F60B /* AirGuitarTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CF723A918B91A6300B9F60B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF7237B18B91A6300B9F60B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CF7238218B91A6300B9F60B;
+			remoteInfo = AirGuitar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2CF7238318B91A6300B9F60B /* AirGuitar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirGuitar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF7238618B91A6300B9F60B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2CF7238818B91A6300B9F60B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2CF7238A18B91A6300B9F60B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2CF7238C18B91A6300B9F60B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2CF7239018B91A6300B9F60B /* AirGuitar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AirGuitar-Info.plist"; sourceTree = "<group>"; };
+		2CF7239218B91A6300B9F60B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2CF7239418B91A6300B9F60B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CF7239618B91A6300B9F60B /* AirGuitar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirGuitar-Prefix.pch"; sourceTree = "<group>"; };
+		2CF7239718B91A6300B9F60B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2CF7239818B91A6300B9F60B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2CF7239B18B91A6300B9F60B /* AirGuitar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AirGuitar.xcdatamodel; sourceTree = "<group>"; };
+		2CF7239D18B91A6300B9F60B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2CF723A318B91A6300B9F60B /* AirGuitarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirGuitarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF723A418B91A6300B9F60B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2CF723AD18B91A6300B9F60B /* AirGuitarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AirGuitarTests-Info.plist"; sourceTree = "<group>"; };
+		2CF723AF18B91A6300B9F60B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2CF723B118B91A6300B9F60B /* AirGuitarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirGuitarTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CF7238018B91A6300B9F60B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF7238918B91A6300B9F60B /* CoreGraphics.framework in Frameworks */,
+				2CF7238D18B91A6300B9F60B /* CoreData.framework in Frameworks */,
+				2CF7238B18B91A6300B9F60B /* UIKit.framework in Frameworks */,
+				2CF7238718B91A6300B9F60B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF723A018B91A6300B9F60B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF723A518B91A6300B9F60B /* XCTest.framework in Frameworks */,
+				2CF723A818B91A6300B9F60B /* CoreData.framework in Frameworks */,
+				2CF723A718B91A6300B9F60B /* UIKit.framework in Frameworks */,
+				2CF723A618B91A6300B9F60B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CF7237A18B91A6300B9F60B = {
+			isa = PBXGroup;
+			children = (
+				2CF7238E18B91A6300B9F60B /* AirGuitar */,
+				2CF723AB18B91A6300B9F60B /* AirGuitarTests */,
+				2CF7238518B91A6300B9F60B /* Frameworks */,
+				2CF7238418B91A6300B9F60B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CF7238418B91A6300B9F60B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CF7238318B91A6300B9F60B /* AirGuitar.app */,
+				2CF723A318B91A6300B9F60B /* AirGuitarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CF7238518B91A6300B9F60B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CF7238618B91A6300B9F60B /* Foundation.framework */,
+				2CF7238818B91A6300B9F60B /* CoreGraphics.framework */,
+				2CF7238A18B91A6300B9F60B /* UIKit.framework */,
+				2CF7238C18B91A6300B9F60B /* CoreData.framework */,
+				2CF723A418B91A6300B9F60B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CF7238E18B91A6300B9F60B /* AirGuitar */ = {
+			isa = PBXGroup;
+			children = (
+				2CF7239718B91A6300B9F60B /* AppDelegate.h */,
+				2CF7239818B91A6300B9F60B /* AppDelegate.m */,
+				2CF7239D18B91A6300B9F60B /* Images.xcassets */,
+				2CF7239A18B91A6300B9F60B /* AirGuitar.xcdatamodeld */,
+				2CF7238F18B91A6300B9F60B /* Supporting Files */,
+			);
+			path = AirGuitar;
+			sourceTree = "<group>";
+		};
+		2CF7238F18B91A6300B9F60B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CF7239018B91A6300B9F60B /* AirGuitar-Info.plist */,
+				2CF7239118B91A6300B9F60B /* InfoPlist.strings */,
+				2CF7239418B91A6300B9F60B /* main.m */,
+				2CF7239618B91A6300B9F60B /* AirGuitar-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CF723AB18B91A6300B9F60B /* AirGuitarTests */ = {
+			isa = PBXGroup;
+			children = (
+				2CF723B118B91A6300B9F60B /* AirGuitarTests.m */,
+				2CF723AC18B91A6300B9F60B /* Supporting Files */,
+			);
+			path = AirGuitarTests;
+			sourceTree = "<group>";
+		};
+		2CF723AC18B91A6300B9F60B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CF723AD18B91A6300B9F60B /* AirGuitarTests-Info.plist */,
+				2CF723AE18B91A6300B9F60B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CF7238218B91A6300B9F60B /* AirGuitar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF723B518B91A6300B9F60B /* Build configuration list for PBXNativeTarget "AirGuitar" */;
+			buildPhases = (
+				2CF7237F18B91A6300B9F60B /* Sources */,
+				2CF7238018B91A6300B9F60B /* Frameworks */,
+				2CF7238118B91A6300B9F60B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirGuitar;
+			productName = AirGuitar;
+			productReference = 2CF7238318B91A6300B9F60B /* AirGuitar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CF723A218B91A6300B9F60B /* AirGuitarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF723B818B91A6300B9F60B /* Build configuration list for PBXNativeTarget "AirGuitarTests" */;
+			buildPhases = (
+				2CF7239F18B91A6300B9F60B /* Sources */,
+				2CF723A018B91A6300B9F60B /* Frameworks */,
+				2CF723A118B91A6300B9F60B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CF723AA18B91A6300B9F60B /* PBXTargetDependency */,
+			);
+			name = AirGuitarTests;
+			productName = AirGuitarTests;
+			productReference = 2CF723A318B91A6300B9F60B /* AirGuitarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CF7237B18B91A6300B9F60B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Evert Timberg";
+				TargetAttributes = {
+					2CF723A218B91A6300B9F60B = {
+						TestTargetID = 2CF7238218B91A6300B9F60B;
+					};
+				};
+			};
+			buildConfigurationList = 2CF7237E18B91A6300B9F60B /* Build configuration list for PBXProject "AirGuitar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2CF7237A18B91A6300B9F60B;
+			productRefGroup = 2CF7238418B91A6300B9F60B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CF7238218B91A6300B9F60B /* AirGuitar */,
+				2CF723A218B91A6300B9F60B /* AirGuitarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CF7238118B91A6300B9F60B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF7239318B91A6300B9F60B /* InfoPlist.strings in Resources */,
+				2CF7239E18B91A6300B9F60B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF723A118B91A6300B9F60B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF723B018B91A6300B9F60B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CF7237F18B91A6300B9F60B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF7239918B91A6300B9F60B /* AppDelegate.m in Sources */,
+				2CF7239518B91A6300B9F60B /* main.m in Sources */,
+				2CF7239C18B91A6300B9F60B /* AirGuitar.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF7239F18B91A6300B9F60B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF723B218B91A6300B9F60B /* AirGuitarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CF723AA18B91A6300B9F60B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CF7238218B91A6300B9F60B /* AirGuitar */;
+			targetProxy = 2CF723A918B91A6300B9F60B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2CF7239118B91A6300B9F60B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CF7239218B91A6300B9F60B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2CF723AE18B91A6300B9F60B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CF723AF18B91A6300B9F60B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CF723B318B91A6300B9F60B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2CF723B418B91A6300B9F60B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CF723B618B91A6300B9F60B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirGuitar/AirGuitar-Prefix.pch";
+				INFOPLIST_FILE = "AirGuitar/AirGuitar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2CF723B718B91A6300B9F60B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirGuitar/AirGuitar-Prefix.pch";
+				INFOPLIST_FILE = "AirGuitar/AirGuitar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2CF723B918B91A6300B9F60B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AirGuitar.app/AirGuitar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirGuitar/AirGuitar-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AirGuitarTests/AirGuitarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2CF723BA18B91A6300B9F60B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AirGuitar.app/AirGuitar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirGuitar/AirGuitar-Prefix.pch";
+				INFOPLIST_FILE = "AirGuitarTests/AirGuitarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CF7237E18B91A6300B9F60B /* Build configuration list for PBXProject "AirGuitar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF723B318B91A6300B9F60B /* Debug */,
+				2CF723B418B91A6300B9F60B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CF723B518B91A6300B9F60B /* Build configuration list for PBXNativeTarget "AirGuitar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF723B618B91A6300B9F60B /* Debug */,
+				2CF723B718B91A6300B9F60B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2CF723B818B91A6300B9F60B /* Build configuration list for PBXNativeTarget "AirGuitarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF723B918B91A6300B9F60B /* Debug */,
+				2CF723BA18B91A6300B9F60B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2CF7239A18B91A6300B9F60B /* AirGuitar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2CF7239B18B91A6300B9F60B /* AirGuitar.xcdatamodel */,
+			);
+			currentVersion = 2CF7239B18B91A6300B9F60B /* AirGuitar.xcdatamodel */;
+			path = AirGuitar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2CF7237B18B91A6300B9F60B /* Project object */;
+}
