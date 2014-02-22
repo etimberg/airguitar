@@ -23,6 +23,8 @@
 		2CF723B018B91A6300B9F60B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CF723AE18B91A6300B9F60B /* InfoPlist.strings */; };
 		2CF723B218B91A6300B9F60B /* AirGuitarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF723B118B91A6300B9F60B /* AirGuitarTests.m */; };
 		2CF723BC18B91CE900B9F60B /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF723BB18B91CE900B9F60B /* CoreAudio.framework */; };
+		2CF723BF18B9212E00B9F60B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF723BD18B9212E00B9F60B /* AudioToolbox.framework */; };
+		2CF723C018B9212F00B9F60B /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF723BE18B9212E00B9F60B /* AudioUnit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		2CF723AF18B91A6300B9F60B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2CF723B118B91A6300B9F60B /* AirGuitarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirGuitarTests.m; sourceTree = "<group>"; };
 		2CF723BB18B91CE900B9F60B /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		2CF723BD18B9212E00B9F60B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2CF723BE18B9212E00B9F60B /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CF723BF18B9212E00B9F60B /* AudioToolbox.framework in Frameworks */,
+				2CF723C018B9212F00B9F60B /* AudioUnit.framework in Frameworks */,
 				2CF723BC18B91CE900B9F60B /* CoreAudio.framework in Frameworks */,
 				2CF7238918B91A6300B9F60B /* CoreGraphics.framework in Frameworks */,
 				2CF7238D18B91A6300B9F60B /* CoreData.framework in Frameworks */,
@@ -106,6 +112,8 @@
 		2CF7238518B91A6300B9F60B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2CF723BD18B9212E00B9F60B /* AudioToolbox.framework */,
+				2CF723BE18B9212E00B9F60B /* AudioUnit.framework */,
 				2CF723BB18B91CE900B9F60B /* CoreAudio.framework */,
 				2CF7238618B91A6300B9F60B /* Foundation.framework */,
 				2CF7238818B91A6300B9F60B /* CoreGraphics.framework */,
