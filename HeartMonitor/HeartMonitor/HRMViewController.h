@@ -20,6 +20,9 @@
 #define MAGNETO_CHARACTERISTIC_UUID @"2A29"
 // End tutorial code
 
-@interface HRMViewController : UIViewController
+@interface HRMViewController : UIViewController <CBCentralManagerDelegate, CBPeripheralDelegate>
+
+@property (nonatomic, strong) CBCentralManager *centralManager;
+@property (nonatomic, strong) CBPeripheral     *polarH7HRMPeripheral;
 
 @end
