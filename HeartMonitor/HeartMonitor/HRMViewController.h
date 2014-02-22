@@ -23,6 +23,26 @@
 @interface HRMViewController : UIViewController <CBCentralManagerDelegate, CBPeripheralDelegate>
 
 @property (nonatomic, strong) CBCentralManager *centralManager;
-@property (nonatomic, strong) CBPeripheral     *polarH7HRMPeripheral;
+@property (nonatomic, strong) CBPeripheral     *kiwiWearablePeripheral;
+
+// Properties for your Object controls
+@property (nonatomic, strong) IBOutlet UITextView  *deviceInfo;
+ 
+// Properties to hold data characteristics for the peripheral device
+@property (nonatomic, strong) NSString   *connected;
+
+@property (nonatomic, strong) uint16_t   *accelData;
+@property (nonatomic, strong) uint16_t   *gyroData;
+@property (nonatomic, strong) uint16_t   *magnetoData;
+
+@property (nonatomic, strong) NSString   *manufacturer;
+@property (nonatomic, strong) NSString   *kiwiWearableDeviceData;
+ 
+// Instance methods to grab device Manufacturer Name, and kiwi wearable data
+- (void) getManufacturerName:(CBCharacteristic *)characteristic;
+
+- (void) getAccelData:(CBCharacteristic *)characteristic;
+- (void) getGyroData:(CBCharacteristic *)characteristic;
+- (void) getMagnetoData:(CBCharacteristic *)characteristic;
 
 @end
