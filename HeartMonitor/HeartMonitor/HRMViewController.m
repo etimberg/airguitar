@@ -17,7 +17,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
 	// Do any additional setup after loading the view, typically from a nib.
+	self.kiwiWearableDeviceData = nil;
+	[self.view setBackgroundColor:[UIColor groupTableViewBackgroundColor]];
+ 
+	// Clear out textView
+	[self.deviceInfo setText:@""];
+	[self.deviceInfo setTextColor:[UIColor blueColor]];
+	[self.deviceInfo setBackgroundColor:[UIColor groupTableViewBackgroundColor]];
+	[self.deviceInfo setFont:[UIFont fontWithName:@"Arial" size:25]];
+	[self.deviceInfo setUserInteractionEnabled:NO];
+ 
+	// Scan for all available CoreBluetooth LE devices
+	NSArray *services = @[[CBUUID UUIDWithString:DEVICE_INFO_SERVICE_UUID], [CBUUID UUIDWithString:DEVICE_DATA_SERVICE_UUID]];
+	CBCentralManager *centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
+	[centralManager scanForPeripheralsWithServices:services options:nil];
+	self.centralManager = centralManager;
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,11 +52,35 @@
 // CBCentralManagerDelegate - This is called with the CBPeripheral class as its main input parameter. This contains most of the information there is to know about a BLE peripheral.
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI 
 {
+    NSString *localName = [advertisementData objectForKey:CBAdvertisementDataLocalNameKey];
+    if ([localName length] > 0) {
+        NSLog(@"Found the Kiwi Wearable: %@", localName);
+        [self.centralManager stopScan];
+        self.kiwiWearablePeripheral = peripheral;
+        peripheral.delegate = self;
+        [self.centralManager connectPeripheral:peripheral options:nil];
+    }
 }
  
 // method called whenever the device state changes.
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central 
 {
+    // Determine the state of the peripheral
+    if ([central state] == CBCentralManagerStatePoweredOff) {
+        NSLog(@"CoreBluetooth BLE hardware is powered off");
+    }
+    else if ([central state] == CBCentralManagerStatePoweredOn) {
+        NSLog(@"CoreBluetooth BLE hardware is powered on and ready");
+    }
+    else if ([central state] == CBCentralManagerStateUnauthorized) {
+        NSLog(@"CoreBluetooth BLE state is unauthorized");
+    }
+    else if ([central state] == CBCentralManagerStateUnknown) {
+        NSLog(@"CoreBluetooth BLE state is unknown");
+    }
+    else if ([central state] == CBCentralManagerStateUnsupported) {
+        NSLog(@"CoreBluetooth BLE hardware is unsupported on this platform");
+    }
 }
 
 #pragma mark - CBPeripheralDelegate
