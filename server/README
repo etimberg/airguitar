@@ -1,0 +1,3 @@
+This code can be compiled on the host computer (preferably UNIX).
+
+I used this code to ensure that the Android app could connect to a specific IP and port (run ./server on the computer, and it will print when connected). An easy way to see the output on the computer itself is to run 'nc localhost 3490'.
