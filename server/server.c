@@ -57,6 +57,7 @@ read_from_client (int filedes)
   else
     {
       /* Data read. */
+      buffer[nbytes] = '\0';
       fprintf (stderr, "Server: got message: '%s'\n", buffer);
       return 0;
     }
