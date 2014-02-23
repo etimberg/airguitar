@@ -22,7 +22,6 @@
 		35AFF6AC185B691D00F1A64F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35AFF6AA185B691D00F1A64F /* InfoPlist.strings */; };
 		35AFF6AE185B691D00F1A64F /* HeartMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35AFF6AD185B691D00F1A64F /* HeartMonitorTests.m */; };
 		35AFF6B8185B697000F1A64F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35AFF6B7185B697000F1A64F /* Media.xcassets */; };
-		906AF86218B9780200288A12 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 906AF86118B9780200288A12 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +55,6 @@
 		35AFF6AB185B691D00F1A64F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		35AFF6AD185B691D00F1A64F /* HeartMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeartMonitorTests.m; sourceTree = "<group>"; };
 		35AFF6B7185B697000F1A64F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		906AF86118B9780200288A12 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +84,6 @@
 		35AFF676185B691D00F1A64F = {
 			isa = PBXGroup;
 			children = (
-				906AF86118B9780200288A12 /* Storyboard.storyboard */,
 				35AFF688185B691D00F1A64F /* HeartMonitor */,
 				35AFF6A7185B691D00F1A64F /* HeartMonitorTests */,
 				35AFF681185B691D00F1A64F /* Frameworks */,
@@ -239,7 +236,6 @@
 				35AFF68D185B691D00F1A64F /* InfoPlist.strings in Resources */,
 				35AFF6B8185B697000F1A64F /* Media.xcassets in Resources */,
 				35AFF696185B691D00F1A64F /* Main.storyboard in Resources */,
-				906AF86218B9780200288A12 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
