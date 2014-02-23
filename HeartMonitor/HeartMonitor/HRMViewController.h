@@ -31,9 +31,9 @@
 // Properties to hold data characteristics for the peripheral device
 @property (nonatomic, strong) NSString   *connected;
 
-@property (nonatomic, strong) uint16_t   *accelData;
-@property (nonatomic, strong) uint16_t   *gyroData;
-@property (nonatomic, strong) uint16_t   *magnetoData;
+@property (assign) uint16_t   *accelData;
+@property (assign) uint16_t   *gyroData;
+@property (assign) uint16_t   *magnetoData;
 
 @property (nonatomic, strong) NSString   *manufacturer;
 @property (nonatomic, strong) NSString   *kiwiWearableDeviceData;

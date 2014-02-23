@@ -101,17 +101,22 @@
 }
 
 #pragma mark - CBCharacteristic helpers
- 
+
+
 // Instance method to get the acceleration
-- (void) getAccel:(CBCharacteristic *)characteristic error:(NSError *)error 
+- (void) getManufacturerName:(CBCharacteristic *)characteristic
+{
+}
+// Instance method to get the acceleration
+- (void) getAccelData:(CBCharacteristic *)characteristic
 {
 }
 // Instance method to get the manufacturer name of the device
-- (void) getGyro:(CBCharacteristic *)characteristic 
+- (void) getGyroData:(CBCharacteristic *)characteristic
 {
 }
 // Instance method to get the body location of the device
-- (void) getMagneto:(CBCharacteristic *)characteristic 
+- (void) getMagnetoData:(CBCharacteristic *)characteristic
 {
 }
 
