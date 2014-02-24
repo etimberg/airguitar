@@ -34,6 +34,9 @@ public class DisplayMessageActivity extends Activity {
 		setContentView(R.layout.activity_display_message);
 		// Show the Up button in the action bar.
 		setupActionBar();
+		
+		// Send data to server
+		mClient.sendData("0,1,2,3,4,5,6,7,8,9");
 	}
 
 	/**
@@ -48,8 +51,6 @@ public class DisplayMessageActivity extends Activity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		mClient.sendData("0,1,2,3,4,5,6,7,8,9");
-		
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.display_message, menu);
 		return true;
